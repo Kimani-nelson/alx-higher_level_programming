@@ -6,13 +6,3 @@ def new_in_list(my_list, idx, element):
     new_list = my_list[:]
     new_list[idx] = element
     return new_list
-
-# Example usage
-if __name__ == "__main__":
-    original_list = [10, 20, 30, 40, 50]
-    index = 2
-    new_element = 35
-    modified_list = new_in_list(original_list, index, new_element)
-    
-    print("Original list:", original_list)
-    print("Modified list:", modified_list)
