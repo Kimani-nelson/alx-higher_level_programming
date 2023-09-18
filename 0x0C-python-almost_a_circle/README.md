@@ -1,75 +1,119 @@
-Background Context
+Almost a Circle - Python Project
+Python Version
+PEP8
+License
 
-The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
+Table of Contents
+Project Description
+Installation
+Usage
+File Structure
+Testing
+Contributing
+License
+Project Description
+The "Almost a Circle" project is part of the Higher Level Curriculum for Python programming. This project aims to provide a comprehensive understanding of various Python concepts and features, including object-oriented programming (OOP), file handling, unit testing, and more.
 
-In this project, you will review everything about Python:
-
-Import
-Exceptions
-Class
-Private attribute
-Getter/Setter
-Class method
-Static method
-Inheritance
-Unittest
-Read/Write file
-You will also learn about:
-
-args and kwargs
-Serialization/Deserialization
-JSON
-
-Resources
-
-Read or watch:
-args/kwargs
-JSON encoder and decoder
-unittest module
-Python test cheatsheet
 Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-General
-
-What is Unit testing and how to implement it in a large project
-How to serialize and deserialize a Class
-How to write and read a JSON file
-What is *args and how to use it
-What is **kwargs and how to use it
-How to handle named arguments in a function
-Copyright - Plagiarism
-You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
-You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
-You are not allowed to publish any content of this project.
-Any form of plagiarism is strictly forbidden and will result in removal from the program.
+Upon completing this project, you will be able to:
+Implement unit testing in a Python project.
+Serialize and deserialize Python objects using JSON.
+Work with command-line arguments using argparse.
+Create classes with private attributes and use getters and setters.
+Understand and apply inheritance and polymorphism.
+Handle exceptions effectively.
+Read and write data to/from files.
+Create and manipulate Python dictionaries.
+Maintain code style and readability following PEP 8 guidelines.
 
 Requirements
 
-Python Scripts
+Python 3.8 or higher.
+Code should adhere to PEP 8 style guidelines.
+All code should be well-documented with clear explanations.
 
-Allowed editors: vi, vim, emacs
-All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
-All your files should end with a new line
-The first line of all your files should be exactly #!/usr/bin/python3
-A README.md file, at the root of the folder of the project, is mandatory
-Your code should use the pycodestyle (version 2.8.*)
-All your files must be executable
-The length of your files will be tested using wc
-All your modules should be documented: python3 -c 'print(__import__("my_module").__doc__)'
-All your classes should be documented: python3 -c 'print(__import__("my_module").MyClass.__doc__)'
-All your functions (inside and outside a class) should be documented: python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
-A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+Installation
 
-Python Unit Tests
+Clone the repository to your local machine:
 
-Allowed editors: vi, vim, emacs
-All your files should end with a new line
-All your test files should be inside a folder tests
-You have to use the unittest module
-All your test files should be python files (extension: .py)
-All your test files and folders should start with test_
-Your file organization in the tests folder should be the same as your project: ex: for models/base.py, unit tests must be in: tests/test_models/test_base.py
-All your tests should be executed by using this command: python3 -m unittest discover tests
-You can also test file by file by using this command: python3 -m unittest tests/test_models/test_base.py
-We strongly encourage you to work together on test cases so that you don’t miss any edge case
+git clone https://github.com/teargas001/almost_a_circle.git
+
+
+Navigate to the project directory:
+
+cd almost_a_circle
+Ensure you have Python 3.8 or higher installed. You can check your Python version with:
+
+python3 --version
+
+No external dependencies are required. This project uses only standard Python libraries.
+
+Usage
+
+Running Unit Tests
+To run the unit tests, use the following command from the project's root directory:
+
+python3 -m unittest discover tests
+
+Example Usage
+You can also interact with the classes by creating Python scripts. Here's an example of how to create a Rectangle object and calculate its area:
+
+from models.rectangle import Rectangle
+
+# Create a Rectangle with width 5 and height 10
+r = Rectangle(5, 10)
+
+# Calculate and print the area
+print("Area:", r.area())
+Command Line Interface (CLI)
+To interact with the project via the command line, use the provided Python scripts in the project's root directory.
+
+0-main.py: Example script for creating and working with Base objects.
+1-main.py: Example script for creating and working with Rectangle objects.
+2-main.py: Example script for validating attributes of Rectangle objects.
+Run these scripts using Python, e.g., python3 0-main.py.
+
+File Structure
+
+The project has the following file structure:
+
+almost_a_circle/
+│
+├── models/
+│   ├── base.py
+│   ├── rectangle.py
+│   └── square.py
+│
+├── tests/
+│   ├── test_models/
+│   │   ├── test_base.py
+│   │   ├── test_rectangle.py
+│   │   └── test_square.py
+│   └── ...
+│
+├── 0-main.py
+├── 1-main.py
+├── 2-main.py
+├── ...
+│
+├── README.md
+└── ...
+
+Testing
+
+This project includes a comprehensive set of unit tests to ensure the functionality and correctness of the implemented classes and methods. You can run the tests using the following command:
+
+python3 -m unittest discover tests
+
+We encourage collaboration on test cases to ensure comprehensive coverage and accuracy.
+
+Contributing
+
+Contributions to this project are welcome. If you find a bug or have an improvement in mind, please open an issue or create a pull request with your proposed changes. For major changes, please discuss them in the issue first.
+
+License
+
+This project is open-source and available under the MIT License. You are free to use, modify, and distribute this software as per the terms of the license.
+
+Thank you for using Almost a Circle! If you have any questions or need further assistance, please feel free
