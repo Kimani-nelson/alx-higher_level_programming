@@ -7,7 +7,15 @@ class Rectangle {
       this.height = h;
     } else {
       // If w or h is not a positive integer, create an empty object
-      Object.create(null);
+      return Object.create(null);
+    }
+  }
+
+  print() {
+    if (this.width && this.height) {
+      for (let i = 0; i < this.height; i++) {
+        console.log('X'.repeat(this.width));
+      }
     }
   }
 }
