@@ -1,4 +1,8 @@
 #!/bin/bash
-# Get the comtent-lenght of a giving ip address
-curl -sI "$1" | awk '/Content-Length/{print $2}'
+# This script takes in a URL, sends a request to that URL using curl,
+# and displays the size of the body of the response in bytes
+
+URL=$1
+SIZE=$(curl -sI "$URL" | grep -i Content-Length | awk '{print $2}')
+echo "$SIZE"
 
