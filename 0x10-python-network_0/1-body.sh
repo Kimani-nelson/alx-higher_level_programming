@@ -6,4 +6,3 @@ curl -sL -w "%{http_code}" -o /dev/null "$1" | {
         curl -s "$1"
     fi
 }
-
